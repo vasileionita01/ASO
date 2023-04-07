@@ -38,10 +38,26 @@ public class Lab2 {
 
                     break;
                 case 2:
-                    // to do
+                    Depozit3 depozitIon = new Depozit3(7);
+
+                    Producer producer3 = new Producer(depozitIon, "Producer-3", 2);
+                    Producer producer4 = new Producer(depozitIon, "Producer-4", 2);
+
+                    Consumer consumer5 = new Consumer(depozitIon, "Consumer-5");
+                    Consumer consumer6 = new Consumer(depozitIon, "Consumer-6");
+                    Consumer consumer7 = new Consumer(depozitIon, "Consumer-7");
+                    Consumer consumer8 = new Consumer(depozitIon, "Consumer-8");
+
+                    producer3.start();
+                    producer4.start();
+
+                    consumer5.start();
+                    consumer6.start();
+                    consumer7.start();
+                    consumer8.start();
                     break;
                 case 3:
-                    // to do
+                     //to do
                     break;
                 default:
                     System.out.println("Asa numar de optiune nu exista");
